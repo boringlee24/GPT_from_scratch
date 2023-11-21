@@ -1,5 +1,5 @@
 import numpy as np
-from building_blocks import gelu, softmax, layer_norm, linear
+from building_blocks import gelu, softmax, layer_norm, linear, transformer_block
 
 def gpt2(inputs, wte, wpe, blocks, ln_f, n_head):  # [n_seq] -> [n_seq, n_vocab]
     # 'wpe': [1024, 768] position embedding
